@@ -11,7 +11,7 @@ function App() {
   <Router>
   <Navbar />
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/mozscholars" element={<Home />} />
     <Route path="/Sobre" element={<About />} />
     <Route path="/Links-Úteis" element={<Sources />} />
   </Routes>
