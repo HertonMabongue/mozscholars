@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/">Início</a>
+              <a className="nav-link" href="http://mozscholars.co">Início</a>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/Sobre">Sobre</Link>
