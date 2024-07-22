@@ -1,5 +1,8 @@
 
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
+
+
 
 const logoStyle = {
   maxWidth: '95px', 
@@ -8,8 +11,11 @@ const logoStyle = {
 
 
 
-
+function refreshPage(){
+  window.location.reload();
+} 
 const Navbar = () => {
+  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top py-0"
@@ -39,7 +45,7 @@ const Navbar = () => {
               <a className="nav-link"  href="/">Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Sobre">Sobre</a>
+              <Link className="nav-link" to="/Sobre" onClick="refreshPage()">Sobre</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="mailto:mozscholars@gmail.com">Contacto</a>
@@ -48,7 +54,7 @@ const Navbar = () => {
               <a className="nav-link" href="https://www.ibe.gov.mz/?cat=52" target="_blank" rel="noopener noreferrer">Bolsas Oferecidas pelo IBE</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Links-Úteis">Links Úteis</a>   
+              <Link className="nav-link" to="/Links-Úteis" onClick="refreshPage()">Links Úteis</Link>   
             </li>         
           </ul>
         </div>
