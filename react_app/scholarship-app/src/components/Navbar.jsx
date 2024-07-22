@@ -10,10 +10,6 @@ const logoStyle = {
 };
 
 
-
-function refreshPage(){
-  window.location.reload();
-} 
 const Navbar = () => {
   
 
@@ -34,8 +30,7 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          
-          
+         
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +40,7 @@ const Navbar = () => {
               <a className="nav-link"  href="/">Início</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Sobre" onClick="refreshPage()">Sobre</Link>
+              <Link className="nav-link" to="/Sobre" onClick="history.go(0);">Sobre</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="mailto:mozscholars@gmail.com">Contacto</a>
@@ -54,7 +49,7 @@ const Navbar = () => {
               <a className="nav-link" href="https://www.ibe.gov.mz/?cat=52" target="_blank" rel="noopener noreferrer">Bolsas Oferecidas pelo IBE</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Links-Úteis" onClick="refreshPage()">Links Úteis</Link>   
+              <Link className="nav-link" to="/Links-Úteis" onClick="history.go(0);">Links Úteis</Link>   
             </li>         
           </ul>
         </div>
