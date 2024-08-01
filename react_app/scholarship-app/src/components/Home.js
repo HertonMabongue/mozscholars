@@ -3,6 +3,7 @@ import styles from "../styles";
 import api from '../api'; 
 import student from '../assets/student.jpg';
 import ClipLoader from "react-spinners/ClipLoader";
+import { Helmet } from 'react-helmet';
 
 const override = {
     display: "block",
@@ -27,6 +28,11 @@ function Home() {
 
   return (
     <div className="bg-white w-full overflow-hidden pt-30">
+      <Helmet>
+        <title>Mozscholars - Discover Scholarships for Mozambican Students</title>
+        <meta name="description" content="Find the best scholarships for Mozambican students. Mozscholars provides comprehensive scholarship information." />
+        <meta name="keywords" content="scholarships, Mozambican students, education, financial aid, bolsas, IBE, mozscholars, aluno, Mozambique" />
+      </Helmet>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
         </div>

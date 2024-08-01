@@ -1,8 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 
 function About() {
   return (
     <div className="container " style={{ marginTop: '200px', paddingTop: '40px', background: 'linear-gradient(135deg, #e6f7ff, #ffffff)', paddingBottom: '40px' }}>
+      <Helmet>
+        <title>About Mozscholars - Scholarships for Mozambican Students</title>
+        <meta name="description" content="Learn more about Mozscholars, our mission." />
+        <meta name="keywords" content="about Mozscholars, scholarships, Mozambican students, education" />
+      </Helmet>
       <h1 style={{color:'rgb(70, 190, 244)'}}><strong>Sobre Nós</strong></h1>
       <h2>MozScholars</h2>
       <p>
