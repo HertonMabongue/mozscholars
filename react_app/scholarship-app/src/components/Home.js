@@ -17,10 +17,26 @@ function Home() {
 
   useEffect(() => {
     const fetchScolarships = async () => {
+      try {
         const response = await api.get('/');
-        setScholarships(response.data); // Update scholarships state with fetched data
-        setLoading(false)
-      };
+
+        const cleanedData = response.data.map((scholarship) => ({
+          ...scholarship,
+          Name: scholarship.Name.replace(/[\r\n]+/g, ' '),
+          Description: scholarship.Description.replace(/[\r\n]+/g, ' '),
+          Nationality: scholarship.Nationality.replace(/[\r\n]+/g, ' '),
+          Programs: scholarship.Programs.replace(/[\r\n]+/g, ' '),
+          Host_countries: scholarship.Host_countries.replace(/[\r\n]+/g, ' '),
+          More_info: scholarship.More_info.replace(/[\r\n]+/g, ' ')
+        }));
+  
+        setScholarships(cleanedData); 
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching scholarships:", error);
+        setLoading(false);
+      }
+    };
     
 
       fetchScolarships(); 
@@ -29,8 +45,10 @@ function Home() {
   return (
     <div className="bg-white w-full overflow-hidden pt-30">
       <Helmet>
-        <title>Mozscholars - Discover Scholarships for Mozambican Students</title>
-        <meta name="description" content="Find the best scholarships for Mozambican students. Mozscholars provides comprehensive scholarship information." />
+        <title>Mozscholars - Descubra Oportunidades</title>
+        <meta name="description" content="Encontre as melhores oportunidades para estudantes moçambicanos. 
+                                          A MozScholars oferece informações abrangentes sobre bolsas de estudo,
+                                           programas de intercâmbio e outras oportunidades de desenvolvimento educacional e profissional." />
         <meta name="keywords" content="scholarships, Mozambican students, education, financial aid, bolsas, IBE, mozscholars, aluno, Mozambique" />
       </Helmet>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>

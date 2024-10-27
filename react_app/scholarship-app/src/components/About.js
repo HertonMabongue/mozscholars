@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="container " style={{ marginTop: '200px', paddingTop: '40px', background: 'linear-gradient(135deg, #e6f7ff, #ffffff)', paddingBottom: '40px' }}>
       <Helmet>
-        <title>About Mozscholars - Scholarships for Mozambican Students</title>
+        <title>Sobre a Mozscholars</title>
         <meta name="description" content="Learn more about Mozscholars, our mission." />
         <meta name="keywords" content="about Mozscholars, scholarships, Mozambican students, education" />
       </Helmet>
@@ -16,7 +16,7 @@ function About() {
       Na Mozscholars, entendemos a ambição de buscar a educação superior sem barreiras financeiras. 
       Nossa missão é conectar estudantes aspirantes a uma seleção de bolsas de estudo internacionais e recursos valiosos. 
       Todos sonham em frequentar a universidade gratuitamente, e a Mozscholars se esforça para tornar esse sonho mais acessível, 
-      fornecendo acesso a diversas oportunidades de bolsas de estudo e sites úteis.
+      fornecendo acesso a diversas oportunidades e sites úteis.
       </p>
       <p>
       <strong>Aviso Legal:</strong> É importante notar que a MozScholars não tem qualquer afiliação, parceria ou associação com as organizações que fornecem as bolsas de estudo listadas em nosso site.

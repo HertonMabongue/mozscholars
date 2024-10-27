@@ -34,15 +34,28 @@ function Sources()  {
         name: ' Prime Education',
         url:'https://www.primeducation.co.mz',
       },
+      {
+        name: 'Oportunidades CPLP',
+        url:'https://www.oportunidadescplp.info',
+      },
+      {
+        name: 'EduPortugal',
+        url:'https://eduportugal.eu/',
+      },
+      {
+        name: 'Emprego MZ',
+        url:'https://www.emprego.co.mz/',
+      },
+      
       // Add more sources as needed
     ];
   
     return (
       <div className="container " style={{ marginTop: '200px', paddingTop: '40px', background: 'linear-gradient(135deg, #e6f7ff, #ffffff)', paddingBottom: '40px' }}>
          <Helmet>
-        <title>Useful Links - Mozscholars</title>
-        <meta name="description" content="Find useful links to scholarship resources for Mozambican students on Mozscholars." />
-        <meta name="keywords" content="scholarship links, Mozambican students, education resources" />
+        <title>Links Úteis - Mozscholars</title>
+        <meta name="description" content="Links Úteis para bolsas de estudo." />
+        <meta name="keywords" content="Mozambique, scholarship links, Mozambican students, education resources, Moz scholars, mozscholars, Bolsas" />
       </Helmet>
         <h1 style={{color:'rgb(70, 190, 244)'}}>Links Úteis</h1>
         <ul>
