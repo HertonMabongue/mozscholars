@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.480ffe48.js",
+    "main.js": "/static/js/main.38e89ede.js",
     "static/media/student.jpg": "/static/media/student.2b59809462ff4421cb20.jpg",
+    "static/media/OportunidadesCPLPlogo.png": "/static/media/OportunidadesCPLPlogo.968816c9ca62834aa1c8.png",
     "static/media/logo.png": "/static/media/logo.9305ca4c29aad68d84d7.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.480ffe48.js.map": "/static/js/main.480ffe48.js.map"
+    "main.38e89ede.js.map": "/static/js/main.38e89ede.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.480ffe48.js"
+    "static/js/main.38e89ede.js"
   ]
 }
