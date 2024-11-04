@@ -72,6 +72,10 @@ function OportunidadesCPLP() {
           <a href="https://www.instagram.com/oportunidades_cplp/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
             Instagram
           </a>
+          {' | '}
+          <a href="https://whatsapp.com/channel/0029VanzlrsJJhzUepNYia2G/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
+            Whatsapp
+          </a>  
         </div>
       </div>
       

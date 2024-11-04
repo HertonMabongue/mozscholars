@@ -7,7 +7,7 @@ function About() {
     <div className="container " style={{ marginTop: '200px', paddingTop: '40px', background: 'linear-gradient(135deg, #e6f7ff, #ffffff)', paddingBottom: '40px' }}>
       <Helmet>
         <title>Sobre a Mozscholars</title>
-        <meta name="description" content="Learn more about Mozscholars, our mission." />
+        <meta name="description" content="Sobre a Mozscholars." />
         <meta name="keywords" content="about Mozscholars, scholarships, Mozambican students, education" />
       </Helmet>
       <h1 style={{color:'rgb(70, 190, 244)'}}><strong>Sobre Nós</strong></h1>
