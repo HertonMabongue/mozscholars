@@ -9,16 +9,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-  <Router>
-  <Navbar />
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/Sobre" element={<About />} />
-    <Route path="/Links-Úteis" element={<Sources />} />
-    <Route path="/Oportunidades-CPLP" element={<OportunidadesCPLP/>} />
-  </Routes>
-</Router>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Sobre" element={<About />} />
+        <Route path="/Links-Úteis" element={<Sources />} />
+        <Route path="/Oportunidades-CPLP" element={<OportunidadesCPLP />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
