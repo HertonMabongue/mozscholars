@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="https://mozscholars.co/">
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
