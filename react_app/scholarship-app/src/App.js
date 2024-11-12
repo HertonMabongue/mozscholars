@@ -4,8 +4,8 @@ import About from './components/About';
 import Sources from './components/Sources';
 import Home from './components/Home';
 import OportunidadesCPLP from './components/OportunidadesCPLP';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+// Replace BrowserRouter with HashRouter
 
 function App() {
   return (
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
-
