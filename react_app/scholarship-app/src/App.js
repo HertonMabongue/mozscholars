@@ -4,12 +4,11 @@ import About from './components/About';
 import Sources from './components/Sources';
 import Home from './components/Home';
 import OportunidadesCPLP from './components/OportunidadesCPLP';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-// Replace BrowserRouter with HashRouter
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
