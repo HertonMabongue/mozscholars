@@ -5,6 +5,7 @@ import student from '../assets/student.jpg';
 import ClipLoader from "react-spinners/ClipLoader";
 import { Helmet } from 'react-helmet';
 
+
 const override = {
     display: "block",
     margin: "0 auto",

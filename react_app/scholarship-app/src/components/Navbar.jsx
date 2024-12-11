@@ -2,11 +2,20 @@ import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { FaInstagram } from 'react-icons/fa'; // Importing Instagram icon
+
 
 const logoStyle = {
   maxWidth: '95px',
   height: 'auto', // Maintain aspect ratio
+}
+const instagramIconStyle = {
+  position: 'absolute',
+  height: 'auto',
+  right:'90px',
+  fontSize: '24px',
 };
+
 
 const copyrightStyle = {
   fontSize: '12px',
@@ -50,6 +59,7 @@ const Navbar = () => {
             <p style={copyrightStyle}>&copy; 2024 MozScholars</p>
           </Link>
         </header>
+         
         <button
           className="navbar-toggler"
           type="button"
@@ -94,6 +104,11 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/Escolas" onClick={handleLinkClick}>
+              Escolas 🔍
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/Links-Úteis" onClick={handleLinkClick}>
                 Links Úteis
               </Link>
@@ -121,6 +136,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        {/* Instagram Icon Link */}
+        <a
+          href="https://www.instagram.com/mozscholars"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={instagramIconStyle}
+        >
+          <FaInstagram /> {/* Instagram Icon */}
+        </a>
       </div>
     </nav>
   );
