@@ -56,7 +56,7 @@ const Navbar = () => {
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="Logo" className="logo" style={logoStyle} />
             {/* Copyright Info */}
-            <p style={copyrightStyle}>&copy; 2024 MozScholars</p>
+            <p style={copyrightStyle}>&copy; 2025 MozScholars</p>
           </Link>
         </header>
          
