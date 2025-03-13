@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Footer from './components/Footer';
 import Sources from './components/Sources';
 import Home from './components/Home';
 import OportunidadesCPLP from './components/OportunidadesCPLP';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Oportunidades-CPLP" element={<OportunidadesCPLP />} />
         <Route path="/Escolas" element={<FindSchools />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
