@@ -1,60 +1,61 @@
-Scholarship Finder for Mozambican Students
-Overview
+<h1 align="left">Scholarship Finder for Mozambican Students</h1>
 
-This web application aims to assist Mozambican students in discovering suitable scholarship opportunities. It aggregates scholarship information from various websites, processes the data, and presents it in a user-friendly format.
-Data Pipeline
+## <p align="left">This web application aims to assist Mozambican students in discovering suitable scholarship opportunities. It aggregates scholarship information from various websites, processes the data, and presents it in a user-friendly format.</p>
 
-    Data Collection:
-        Gathers scholarship data from multiple online sources.
-        Employs web scraping techniques to extract relevant information.
-    Data Cleaning and Processing:
-        Cleans and standardizes the collected data.
-        Enhances data quality through transformation and modification.
-    Data Storage:
-        Utilizes MongoDB to store scholarship information in a structured format.
-        Designs a MongoDB schema to effectively represent scholarship data.
-    Data Management:
-        Implements a script to regularly update scholarship data.
-        Deletes expired scholarship listings to maintain data freshness.
+## Data Pipeline
 
-Technology Stack
+1. Gathers scholarship data from multiple online sources and employs web scraping techniques to extract relevant information
 
-    Backend: FastAPI, MongoDB
-    Frontend: ReactJS
-    Deployment: Render (Backend), GitHub Pages (Frontend)
-    Data Processing: Python libraries for web scraping, data cleaning, and MongoDB interactions
 
-Features
 
-    Comprehensive scholarship database
-    User-friendly interface for searching and filtering scholarships
-    Scholarship information including eligibility criteria,application links and useful resources
-    Regular updates to ensure data accuracy
-    Integration with a translation API for multilingual support
+2. Cleans and standardizes the collected data and enhances data quality through transformation and modification
 
-Challenges and Solutions
+3. Utilizes MongoDB to store scholarship information in a structured format and designs a MongoDB schema to effectively represent scholarship data
+
+
+4. Implements a script to regularly update scholarship data
+
+## Technology Stack
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="50" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="50" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="50" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="50" alt="github logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="50" alt="mongodb logo"  />
+</div>
+
+## Challenges and Solutions
 
     Data Transformation: Addressed data inconsistencies and formatting issues through data cleaning and processing.
     Data Storage: MongoDB's flexible schema accommodated diverse scholarship data structures.
-    Data Management: Implemented a scheduled script to maintain data freshness.
+    Data Management: Implemented a python script to maintain data freshness.
     User Interface: Designed an intuitive interface using ReactJS for easy navigation and information consumption.
     Language Barrier: Integrated a free translation API to provide scholarship information in Portuguese.
 
-Possible Improvements
+## Possible Improvements
 
     Expand scholarship sources to cover a wider range of opportunities.
-    Implement search functionality with advanced filtering options.
     Possible mobile app for better accessibility.
     Explore partnerships with educational institutions and organizations.
 
-Contact
+## Contact
 
-Herton Cabral Mabongue
-
-
-
-mozscholars@gmail.com
+#### Herton Cabral Mabongue
 
 
-http://www.linkedin.com/in/herton13
+
+##### mozscholars@gmail.com
+
+
+##### http://www.linkedin.com/in/herton13
 
