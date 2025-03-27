@@ -4,16 +4,11 @@
 
 ## Data Pipeline
 
-1. Gathers scholarship data from multiple online sources and employs web scraping techniques to extract relevant information
+#### 1. Gathers scholarship data from multiple online sources and employs web scraping techniques to extract relevant information
+#### 2. Cleans and standardizes the collected data and enhances data quality through transformation and modification
+#### 3. Utilizes MongoDB to store scholarship information in a structured format and designs a MongoDB schema to effectively represent scholarship data
+#### 4. Implements a script to regularly update scholarship data
 
-
-
-2. Cleans and standardizes the collected data and enhances data quality through transformation and modification
-
-3. Utilizes MongoDB to store scholarship information in a structured format and designs a MongoDB schema to effectively represent scholarship data
-
-
-4. Implements a script to regularly update scholarship data
 
 ## Technology Stack
 
@@ -30,8 +25,10 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="50" alt="git logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="50" alt="github logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="50" alt="mongodb logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50" alt="python logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="50" alt="fastapi logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="50" alt="render logo"  />
 </div>
 
 ## Challenges and Solutions
