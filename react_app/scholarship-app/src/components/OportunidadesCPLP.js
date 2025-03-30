@@ -5,13 +5,15 @@ import Papa from 'papaparse';
 import ClipLoader from "react-spinners/ClipLoader";
 
 
+// Database link
+const csvUrl = process.env.REACT_APP_CSV_URL;
+
 function OportunidadesCPLP() {
   const [opportunities, setOpportunities] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchOpportunities = async () => {
-      const csvUrl = 'https://docs.google.com/spreadsheets/d/11QKlhLr2JOk3BJN7wQYBbi510cknIa_hR794rr1Zvt4/export?format=csv';
 
       try {
         const response = await fetch(csvUrl);
