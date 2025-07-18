@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://mozscholars.co/sitemap.xml
+Sitemap: https://mozscholars.vercel.app/sitemap.xml
