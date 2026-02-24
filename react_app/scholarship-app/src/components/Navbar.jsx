@@ -1,21 +1,19 @@
-import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import '../assets/styles/style.css';
-
-
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import "../assets/styles/style.css";
 
 const logoStyle = {
-  maxWidth: '95px',
-  height: 'auto', // Maintain aspect ratio
-}
+  maxWidth: "95px",
+  height: "auto", // Maintain aspect ratio
+};
 
 const copyrightStyle = {
-  fontSize: '12px',
-  color: '#6c757d', // Muted gray color
-  marginTop: '-39px',
-  whiteSpace: 'nowrap', // Prevents wrapping
+  fontSize: "12px",
+  color: "#6c757d", // Muted gray color
+  marginTop: "-39px",
+  whiteSpace: "nowrap", // Prevents wrapping
 };
 
 const Navbar = () => {
@@ -26,8 +24,8 @@ const Navbar = () => {
   };
 
   const myDivClassName = isCollapsed
-    ? 'collapse navbar-collapse' // Collapsed state
-    : 'navbar-collapse collapse show'; // Expanded state
+    ? "collapse navbar-collapse" // Collapsed state
+    : "navbar-collapse collapse show"; // Expanded state
 
   return (
     <nav
@@ -36,24 +34,37 @@ const Navbar = () => {
       itemtype="https://schema.org/SiteNavigationElement"
     >
       <div className="container-fluid">
-      <Helmet>
-        <title>Mozscholars - Descubra Oportunidades</title>
-        <meta name="description" content="Encontre as melhores oportunidades para estudantes moçambicanos. 
+        <Helmet>
+          <title>Mozscholars - Descubra Oportunidades</title>
+          <meta
+            name="description"
+            content="Encontre as melhores oportunidades para estudantes moçambicanos. 
                                           A MozScholars oferece informações abrangentes sobre bolsas de estudo,
-                                           programas de intercâmbio e outras oportunidades de desenvolvimento educacional e profissional." />
-        <meta name="keywords" content="scholarships, Mozambican students, education, financial aid, bolsas, IBE, mozscholars, aluno, Mozambique" />
-      </Helmet>
+                                           programas de intercâmbio e outras oportunidades de desenvolvimento educacional e profissional."
+          />
+          <meta
+            name="keywords"
+            content="scholarships, Mozambican students, education, financial aid, bolsas, IBE, mozscholars, aluno, Mozambique"
+          />
+        </Helmet>
         <header
           id="main-header"
           className="absolute top-0 px-20 lg:px-30 w-full z-50 header bg-mono-lightest sticky-header"
         >
           <Link className="navbar-brand" to="/">
-            <img src={logo} alt="MozScholars Logo" className="navbar-logo" style={logoStyle} />
+            <img
+              src={logo}
+              alt="MozScholars Logo"
+              className="navbar-logo"
+              style={logoStyle}
+            />
             {/* Copyright Info */}
-            <p style={copyrightStyle}>&copy; 2025 MozScholars</p>
+            <p style={copyrightStyle}>
+              &copy; {new Date().getFullYear()} MozScholars
+            </p>
           </Link>
         </header>
-         
+
         <button
           className="navbar-toggler"
           type="button"
@@ -98,12 +109,20 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Escolas" onClick={handleLinkClick}>
-              Escolas 
+              <Link
+                className="nav-link"
+                to="/Escolas"
+                onClick={handleLinkClick}
+              >
+                Escolas
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Links-Úteis" onClick={handleLinkClick}>
+              <Link
+                className="nav-link"
+                to="/Links-Úteis"
+                onClick={handleLinkClick}
+              >
                 Links Úteis
               </Link>
             </li>

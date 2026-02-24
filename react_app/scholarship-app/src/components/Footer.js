@@ -40,7 +40,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="footer-bottom">
-        <p>&copy; 2025 MozScholars. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} MozScholars. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
