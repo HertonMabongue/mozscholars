@@ -1,0 +1,148 @@
+/* Footer Container */
+.footer {
+    background: #003366; /* Deep Blue */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Footer Sections */
+  .footer-brand, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-brand h5, .footer-links h5, .footer-social h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Footer Links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: #4dabf7; /* Light Blue Hover */
+  }
+  
+  /* Contact Us Button */
+  .btn-tertiary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4dabf7;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-tertiary:hover {
+    background-color: #ffffff;
+    color: #003366;
+  }
+  
+  /* Social Media Icon */
+  .social-icon {
+    font-size: 28px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #4dabf7;
+  }
+  
+  /* Copyright Section */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+/* General Navbar Styles */
+.navbar {
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .navbar-logo img {
+    max-width: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar .nav-item .nav-link {
+    color: #333; /* Default dark blue */
+    display: inline-block; /* Prevent inline issues */
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .navbar .nav-item:hover .nav-link {
+    color: #0056b3 !important; /* Brighter blue */
+    transform: translateY(-2px); /* Subtle lift */
+  }
+  /* Dropdown menu styles */
+  .nav-item .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .nav-item .dropdown-item {
+    color: #003366;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-item .dropdown-item:hover,
+  .nav-item .dropdown-item:focus {
+    background-color: #0056b3; /* Brighter blue */
+    color: #ffffff;
+  }
+  
+  /* Navbar toggler focus outline removal */
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  

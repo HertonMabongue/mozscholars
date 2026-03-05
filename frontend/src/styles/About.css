@@ -1,0 +1,165 @@
+/* About.css */
+
+
+.about-page-container {
+    min-height: 100vh;
+    padding: 150px 16px; 
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff); /* Light blue to white gradient */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    box-sizing: border-box; 
+  }
+  
+  /* Max width and centering for content */
+  .content-wrapper {
+    max-width: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px; 
+  }
+  
+  /* --- Header Section --- */
+  .header-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .header-section h1 {
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    color: #1e40af; /* Deep blue */
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .header-section h1 span {
+    color: #0ea5e9; 
+  }
+  
+  .header-section .tagline {
+    font-size: 1.25rem; 
+    color: #4b5563; 
+    font-weight: 300; 
+    margin-top: 15px;
+  }
+  
+  .divider-line {
+    width: 96px; 
+    height: 6px; 
+    background: linear-gradient(to right, #38b2ac, #3b82f6); 
+    margin: 24px auto 0; 
+    border-radius: 9999px; 
+  }
+  
+
+  .main-content-card {
+    background-color: #ffffff;
+    border-radius: 24px; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    line-height: 1.8;
+    color: #374151; 
+    border: 1px solid rgba(59, 130, 246, 0.05);
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .main-content-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+  }
+  
+  .main-content-card p {
+    font-size: 1.125rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .main-content-card p:last-of-type {
+    margin-bottom: 0; 
+  }
+  
+  .main-content-card strong {
+    font-weight: 600; 
+    color: #2563eb; 
+  }
+  
+  /* --- Disclaimer Box --- */
+  .disclaimer-box {
+    background-color: #fffbeb; 
+    border-left: 4px solid #facc15;
+    padding: 25px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); 
+    margin-top: 30px;
+  }
+  
+  .disclaimer-box h3 {
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    color: #0c0c0c; /* Darker yellow/brown */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .disclaimer-box .icon-warning {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    color: #f59e0b; /* Orange-yellow icon color */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+  }
+  
+  .disclaimer-box p {
+    font-size: 1rem; /* ~16px */
+    color: #4b5563; /* Gray text */
+    margin-bottom: 10px;
+  }
+  
+  .disclaimer-box p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .disclaimer-box strong {
+    font-weight: 600;
+    color: #a16207; /* Matches disclaimer heading */
+  }
+  
+  /* --- Responsive Adjustments --- */
+  @media (max-width: 768px) {
+    .about-page-container {
+      padding: 110px 16px; 
+    }
+  
+    .content-wrapper {
+      padding-top: 20px; /* Less top padding on smaller screens */
+    }
+  
+    .header-section h1 {
+      font-size: 2.5rem; /* Adjust heading size */
+    }
+  
+    .header-section .tagline {
+      font-size: 1rem;
+    }
+  
+    .main-content-card {
+      padding: 25px;
+    }
+  
+    .main-content-card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .disclaimer-box {
+      padding: 20px;
+    }
+  
+    .disclaimer-box h3 {
+      font-size: 1.1rem;
+    }
+  
+    .disclaimer-box p {
+      font-size: 0.9rem;
+    }
+  }

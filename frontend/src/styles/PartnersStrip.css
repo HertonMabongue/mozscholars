@@ -1,0 +1,144 @@
+.partners-strip {
+  width: 100%;
+  padding: 72px 0 48px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.partners-strip__header {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.partners-strip__label {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #0056b3;
+  margin: 0 0 10px;
+}
+
+.partners-strip__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Scrolling track */
+.partners-strip__track-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-strip__fade-left,
+.partners-strip__fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.partners-strip__fade-left {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.partners-strip__fade-right {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.partners-strip__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll-left 28s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Partner logo item — now an <a> tag */
+.partner-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.partner-logo__badge {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.partner-logo:hover .partner-logo__badge {
+  border-color: #0056b3;
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.15);
+  transform: scale(1.08);
+}
+
+.partner-logo__initials {
+  font-size: 16px;
+  font-weight: 800;
+  color: #64748b;
+  transition: color 0.3s;
+}
+
+.partner-logo:hover .partner-logo__initials {
+  color: #003366;
+}
+
+.partner-logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.partner-logo__name {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.partner-logo:hover .partner-logo__name {
+  color: #1a1a2e;
+}
+
+/* Divider */
+.partners-strip__divider {
+  width: 80px;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 40px auto 0;
+}
