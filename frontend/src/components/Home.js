@@ -11,7 +11,7 @@ const steps = [
   {
     num: '01',
     title: 'Explore as Bolsas',
-    desc: 'Navegue pela nossa lista atualizada de bolsas.',
+    desc: 'Navegue pela nossa lista de oportunidades.',
   },
   {
     num: '02',
@@ -46,18 +46,16 @@ function Home() {
       </Helmet>
 
       {/* ── Hero ── */}
-      <section
-        className="home-hero"
-        style={{ backgroundImage: `url(${student})` }}
-      >
+      <section className="home-hero" style={{ backgroundImage: `url(${student})` }}>
         <div className="home-hero__overlay" />
         <div className="home-hero__content">
           <span className="home-hero__tag">Plataforma de Oportunidades</span>
           <h1 className="home-hero__title">
-            Descubra <span>Oportunidades</span>. 
+            Descubra <span>Oportunidades</span>.
           </h1>
           <p className="home-hero__sub">
-            Aceda a oportunidades educacionais e profissionais nacionais e internacionais, reunidas num só lugar.
+            Aceda a oportunidades educacionais e profissionais nacionais e internacionais, reunidas
+            num só lugar.
           </p>
           <div className="home-hero__actions">
             <Link to="/Bolsas" className="home-hero__btn-primary">
@@ -74,18 +72,25 @@ function Home() {
       <section className="home-mv">
         <div className="home-mv__inner">
           <div className="home-mv__card home-mv__card--mission">
-            <div className="home-mv__icon"><PiRocketLaunchDuotone /></div>
+            <div className="home-mv__icon">
+              <PiRocketLaunchDuotone />
+            </div>
             <h3 className="home-mv__card-label"> A Nossa Missão</h3>
             <p className="home-mv__card-text">
-              Democratizar o acesso à informação sobre bolsas e oportunidades educacionais, capacitando estudantes moçambicanos a construírem futuros mais brilhantes — independentemente da sua origem.
+              Democratizar o acesso à informação sobre bolsas e oportunidades educacionais,
+              capacitando estudantes moçambicanos a construírem futuros mais brilhantes —
+              independentemente da sua origem.
             </p>
           </div>
           <div className="home-mv__divider" />
           <div className="home-mv__card home-mv__card--vision">
-            <div className="home-mv__icon"><PiGlobeDuotone /></div>
+            <div className="home-mv__icon">
+              <PiGlobeDuotone />
+            </div>
             <h3 className="home-mv__card-label">Nossa Visão</h3>
             <p className="home-mv__card-text">
-              Ser a plataforma de referência para estudantes moçambicanos que aspiram a uma educação de excelência, conectando talentos locais com oportunidades globais.
+              Ser a plataforma de referência para estudantes moçambicanos que aspiram a uma educação
+              de excelência, conectando talentos locais com oportunidades globais.
             </p>
           </div>
         </div>
@@ -119,7 +124,8 @@ function Home() {
       <section className="home-cta">
         <h2 className="home-cta__title">Pronto para começar?</h2>
         <p className="home-cta__sub">
-          Explore centenas de bolsas e oportunidades disponíveis agora mesmo para estudantes moçambicanos.
+          Explore centenas de bolsas e oportunidades disponíveis agora mesmo para estudantes
+          moçambicanos.
         </p>
         <Link to="/Bolsas" className="home-cta__btn">
           Explorar Bolsas →

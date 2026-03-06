@@ -66,24 +66,21 @@ function Scholarships() {
     <div className="scholarships-page">
       <Helmet>
         <title>Bolsas de Estudo - Mozscholars</title>
-        <meta name="description" content="Todas as bolsas de estudo disponíveis para estudantes moçambicanos." />
+        <meta
+          name="description"
+          content="Todas as bolsas de estudo disponíveis para estudantes moçambicanos."
+        />
       </Helmet>
 
       {/* Hero */}
       <div className="scholarships-hero">
-        <img
-          src="/scholarship_hero.jpg"
-          alt="Bolsas de Estudo"
-          className="scholarships-hero__bg"
-        />
+        <img src="/scholarship_hero.jpg" alt="Bolsas de Estudo" className="scholarships-hero__bg" />
         <div className="scholarships-hero__overlay" />
         <div className="scholarships-hero__content">
           <h1 className="scholarships-hero__title">
-             <span className="scholarships-hero__accent">Bolsas de Estudo</span>
+            <span className="scholarships-hero__accent">Bolsas de Estudo</span>
           </h1>
-          <p className="scholarships-hero__sub">
-            Explore oportunidades.
-          </p>
+          <p className="scholarships-hero__sub">Explore oportunidades.</p>
         </div>
       </div>
 
@@ -143,7 +140,10 @@ function Scholarships() {
               {hasActiveFilters && (
                 <button
                   className="scholarships-filters__clear"
-                  onClick={() => { setSelectedCountry(null); setSelectedProgram(null); }}
+                  onClick={() => {
+                    setSelectedCountry(null);
+                    setSelectedProgram(null);
+                  }}
                 >
                   <X size={13} /> Limpar filtros
                 </button>
@@ -201,15 +201,22 @@ function Scholarships() {
                       <div className="scholarship-card__details">
                         <p>
                           <Users size={13} className="scholarship-card__detail-icon" />
-                          <span className="scholarship-card__detail-label">Nacionalidade:</span> {scholarship.Nationality}
+                          <span className="scholarship-card__detail-label">
+                            Nacionalidade:
+                          </span>{' '}
+                          {scholarship.Nationality}
                         </p>
                         <p>
                           <Globe size={13} className="scholarship-card__detail-icon" />
-                          <span className="scholarship-card__detail-label">País anfitrião:</span> {scholarship.Host_countries}
+                          <span className="scholarship-card__detail-label">
+                            País anfitrião:
+                          </span>{' '}
+                          {scholarship.Host_countries}
                         </p>
                         <p>
                           <BookOpen size={13} className="scholarship-card__detail-icon" />
-                          <span className="scholarship-card__detail-label">Programas:</span> {scholarship.Programs}
+                          <span className="scholarship-card__detail-label">Programas:</span>{' '}
+                          {scholarship.Programs}
                         </p>
                       </div>
                     </div>

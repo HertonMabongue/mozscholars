@@ -10,9 +10,7 @@ function NotFound() {
         <PiSmileySadDuotone className="notfound__icon" />
         <p className="notfound__code">404</p>
         <h1 className="notfound__title">Página não encontrada</h1>
-        <p className="notfound__sub">
-          A página que procura não existe ou foi movida.
-        </p>
+        <p className="notfound__sub">A página que procura não existe ou foi movida.</p>
         <Link to="/" className="notfound__btn">
           ← Voltar ao Início
         </Link>

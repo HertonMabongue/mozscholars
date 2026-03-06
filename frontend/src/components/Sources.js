@@ -99,8 +99,14 @@ function Sources() {
     <div style={p.page}>
       <Helmet>
         <title>Links Úteis - Mozscholars</title>
-        <meta name="description" content="Links úteis para bolsas de estudo e oportunidades para estudantes moçambicanos." />
-        <meta name="keywords" content="Mozambique, bolsas, portugal, brazil, estudantes, scholarship links, mozscholars" />
+        <meta
+          name="description"
+          content="Links úteis para bolsas de estudo e oportunidades para estudantes moçambicanos."
+        />
+        <meta
+          name="keywords"
+          content="Mozambique, bolsas, portugal, brazil, estudantes, scholarship links, mozscholars"
+        />
       </Helmet>
 
       {/* Hero */}
@@ -143,7 +149,10 @@ function Sources() {
 
       {/* Results count */}
       <div style={p.resultsMeta}>
-        <span style={p.resultsCount}>{filtered.length} recurso{filtered.length !== 1 ? 's' : ''} encontrado{filtered.length !== 1 ? 's' : ''}</span>
+        <span style={p.resultsCount}>
+          {filtered.length} recurso{filtered.length !== 1 ? 's' : ''} encontrado
+          {filtered.length !== 1 ? 's' : ''}
+        </span>
       </div>
 
       {/* Cards by section */}
@@ -153,7 +162,11 @@ function Sources() {
           return (
             <div key={cat} style={p.section}>
               <div style={p.sectionHeader}>
-                {cat === 'Internacional' ? <Globe size={18} style={{ color: '#003366' }} /> : <MapPin size={18} style={{ color: '#003366' }} />}
+                {cat === 'Internacional' ? (
+                  <Globe size={18} style={{ color: '#003366' }} />
+                ) : (
+                  <MapPin size={18} style={{ color: '#003366' }} />
+                )}
                 <h2 style={p.sectionTitle}>{cat}</h2>
                 <span style={p.sectionBadge}>{grouped[cat].length}</span>
               </div>
@@ -192,7 +205,9 @@ function Sources() {
 
         {filtered.length === 0 && (
           <div style={p.empty}>
-            <p>Nenhum recurso encontrado para "<strong>{searchQuery}</strong>".</p>
+            <p>
+              Nenhum recurso encontrado para "<strong>{searchQuery}</strong>".
+            </p>
           </div>
         )}
       </div>

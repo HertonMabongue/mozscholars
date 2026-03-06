@@ -42,11 +42,12 @@ function FAQ() {
 
       <div className="faq__list">
         {faqs.map((faq, i) => (
-          <div
-            key={i}
-            className={`faq__item${openIndex === i ? ' faq__item--open' : ''}`}
-          >
-            <button className="faq__question" onClick={() => toggle(i)} aria-expanded={openIndex === i}>
+          <div key={i} className={`faq__item${openIndex === i ? ' faq__item--open' : ''}`}>
+            <button
+              className="faq__question"
+              onClick={() => toggle(i)}
+              aria-expanded={openIndex === i}
+            >
               <span>{faq.question}</span>
               <ChevronDown
                 size={18}

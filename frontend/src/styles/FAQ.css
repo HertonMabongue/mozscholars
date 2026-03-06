@@ -78,7 +78,9 @@
 .faq__chevron {
   flex-shrink: 0;
   color: #94a3b8;
-  transition: transform 0.25s ease, color 0.2s;
+  transition:
+    transform 0.25s ease,
+    color 0.2s;
 }
 
 .faq__chevron--rotated {
@@ -89,7 +91,9 @@
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
   padding: 0 24px;
 }
 

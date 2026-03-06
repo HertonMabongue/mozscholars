@@ -2,27 +2,24 @@ import { useEffect, useRef, useState } from 'react';
 import '../styles/PartnersStrip.css';
 import OportunidadesCPLPlogo from '../assets/partners/OportunidadesCPLPlogo.png';
 
-
-
 const partners = [
-  { name: 'Oportunidades CPLP', initials: 'OCPLP',  url: 'https://www.oportunidadescplp.info/',                   logo: OportunidadesCPLPlogo },
-  
+  {
+    name: 'Oportunidades CPLP',
+    initials: 'OCPLP',
+    url: 'https://www.oportunidadescplp.info/',
+    logo: OportunidadesCPLPlogo,
+  },
 ];
 
 function PartnerLogo({ name, initials, url, logo }) {
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="partner-logo"
-      title={name}
-    >
+    <a href={url} target="_blank" rel="noopener noreferrer" className="partner-logo" title={name}>
       <div className="partner-logo__badge">
-        {logo
-          ? <img src={logo} alt={name} className="partner-logo__img" />
-          : <span className="partner-logo__initials">{initials}</span>
-        }
+        {logo ? (
+          <img src={logo} alt={name} className="partner-logo__img" />
+        ) : (
+          <span className="partner-logo__initials">{initials}</span>
+        )}
       </div>
       <span className="partner-logo__name">{name}</span>
     </a>
