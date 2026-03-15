@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Sources from './components/Sources';
 import Home from './components/Home';
 import Scholarships from './components/Scholarships';
+import Universidades from './components/Universidades';
 import OportunidadesCPLP from './components/OportunidadesCPLP';
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
@@ -32,6 +33,16 @@ function App() {
             <>
               <Navbar />
               <Scholarships />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Universidades"
+          element={
+            <>
+              <Navbar />
+              <Universidades />
               <Footer />
             </>
           }

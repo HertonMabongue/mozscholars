@@ -43,6 +43,11 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link to="/Universidades" style={styles.link}>
+                Universidades
+              </Link>
+            </li>
+            <li>
               <Link to="/Links-Úteis" style={styles.link}>
                 Links Úteis
               </Link>

@@ -68,6 +68,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/Universidades" style={linkStyle('/Universidades')}>
+                  Universidades
+                </Link>
+              </li>
+              <li>
                 <Link to="/Links-Úteis" style={linkStyle('/Links-Úteis')}>
                   Links Úteis
                 </Link>
@@ -153,6 +158,11 @@ const Navbar = () => {
             <li>
               <Link to="/Bolsas" style={s.mobileLink} onClick={closeAll}>
                 Bolsas
+              </Link>
+            </li>
+            <li>
+              <Link to="/Universidades" style={s.mobileLink} onClick={closeAll}>
+                Universidades
               </Link>
             </li>
             <li>
